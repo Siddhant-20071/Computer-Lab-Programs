@@ -1,0 +1,34 @@
+//To Grade your Marks 
+#include <stdio.h>
+int main()
+{
+    float m1, m2, m3, total, average;
+    char grade,result;
+    printf("enter the marks");
+    scanf("%f%f%f",&m1,&m2,&m3);
+    total=m1+m2+m3;
+    average=total/3;
+    printf("the total marks %f\n", total);
+    printf("average marks %f\n", average);
+
+    if (average>=90)
+        grade='A';
+    else if (average>=80)
+        grade='B';
+    else if (average>=70)
+        grade='C';
+    else if (average>=60)
+        grade='D';
+    else if (average>=50)
+        grade='E';
+    else grade='F';
+    printf("grade=%c", grade);
+
+    if(average>=50||m1>50||m2>50||m3>50)
+        printf("Result is Pass");
+    else
+       printf("result is fail");
+
+    return 0;
+
+}

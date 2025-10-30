@@ -1,0 +1,15 @@
+// to find the difference between 2 numbers
+#include <stdio.h>
+
+void main() 
+{
+    int a,b,diff; 
+    printf("Enter 2 numbers:");
+    scanf("%d%d",&a,&b);
+    if(a>b)
+    { 
+        diff=a-b;
+    }
+    else diff=b-a;
+    printf("difference=%d",diff);
+}

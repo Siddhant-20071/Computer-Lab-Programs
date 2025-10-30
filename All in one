@@ -1,0 +1,24 @@
+// To Add,sub,multiple,divide (all in one)
+#include <stdio.h>
+void main()
+{
+     int a,b,sum,diff,product,div;
+     printf("Enter 2 number");
+     scanf("%d%d",&a,&b);
+     sum=a+b;
+     if(a>b)
+    { 
+        diff=a-b;
+    }
+    else diff=b-a;
+    product=a*b;
+    if(a>b)
+    {
+    div=a/b;
+    }
+    else div=b/a;
+    printf("Sum=%d",sum);
+    printf("diff=%d",diff);
+    printf("product=%d",product);
+    printf("Answer=%d",div);
+}

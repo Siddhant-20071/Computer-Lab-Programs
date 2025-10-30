@@ -1,0 +1,43 @@
+//Write a Program to make a simple calculator 
+#include <stdio.h>
+int main()
+{
+    float num1,num2,result;
+    char op;
+    printf("Simple Calculator using switch case");
+    printf("-----------------\n");
+    printf("Enter an opertor (+,-,*,/): ");
+    scanf("%c",&op);
+    printf("Enter two number: ");
+    scanf("%f%f",&num1,&num2);
+    switch(op)
+    {
+        case '+':
+        result=num1+num2;
+        printf("Addition: %.2f",result);
+        break;
+        
+        case '-':
+        result=num1-num2;
+        printf("Subtraction: %.2f",result);
+        break;
+        
+        case '*':
+        result=num1*num2;
+        printf("Multiplication: %.2f",result);
+        break;
+        
+        case '/':
+        if(num2!=0)
+        {
+            printf("result: %.2f",num1/num2);
+        }
+            else
+            printf("Error! 0 is not allowed in division");
+        break;
+        
+        default:
+        printf("Invalid Operation!! Choose from'+,-,*,/");
+    }
+    return 0;
+    }

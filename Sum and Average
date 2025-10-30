@@ -1,0 +1,16 @@
+//To find the sum and average of 3 numbers
+#include <stdio.h>
+
+int main() 
+{
+    int num1,num2,num3,sum;
+    int avg;
+    printf("ENter any 3 numbers:");
+    scanf("%d%d%d",&num1,&num2,&num3);
+    sum=num1+num2+num3;
+    avg=sum/3;
+    printf("Sum=%d",sum);
+    printf("Average=%d",avg);
+
+    return 0;
+}
