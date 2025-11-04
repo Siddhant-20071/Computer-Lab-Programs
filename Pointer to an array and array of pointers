@@ -1,4 +1,4 @@
-/pointer to an array
+//pointer to an array
 void fill(int (*p)[10])
 {
     for(int i=0;i<10;i++)
