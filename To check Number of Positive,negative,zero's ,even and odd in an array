@@ -1,0 +1,39 @@
+// To check Number of Positive,negative,zero's ,even and odd in an array
+#include <stdio.h>
+
+int main() 
+{
+    int a[100];
+    int pos=0,neg=0,zer=0,even=0,odd=0,n,i;
+    printf("Enter the Number of elements in the array");
+    scanf("%d",&n);
+    printf("Enter the elements in the array");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+        if(a[i]>0)
+        {
+          pos++;
+        }
+        else if(a[i]<0)
+        {
+          neg++;
+        }
+        else zer++;
+        
+        if(a[i]%2==0)
+        {
+            even++;
+        }
+        else odd++;
+    }
+    printf("No of Positive number= %d\n",pos);
+    printf("No of Negative Number= %d\n",neg);
+    printf("No of Zero present= %d\n",zer);
+    printf("No of Even Numbers present= %d\n",even);
+    printf("No of Odd Numbers present= %d\n",odd);
+    return 0;
+}
