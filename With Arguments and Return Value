@@ -1,0 +1,12 @@
+//With Arguments and Return Value
+#include<stdio.h>
+int sum(int a,int b)
+{
+    return a+b;
+}
+int main()
+{
+    int results=sum(10,5);
+    printf("SUM= %d",results);
+    return 0;
+}

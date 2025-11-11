@@ -1,0 +1,15 @@
+//Without Arguments and With Return Value
+#include<stdio.h>
+int getnumber()
+{
+    int num;
+    printf("Enter a Number");
+    scanf("%d",&num);
+    return num;
+}
+int main()
+{
+    int n=getnumber();
+    printf("You Entered :%d",n);
+    return 0;
+}
