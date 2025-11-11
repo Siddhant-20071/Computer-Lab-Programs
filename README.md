@@ -1,3 +1,4 @@
 # Computer-Lab-Programs
 C Programming programs
-Notrhing ro 
+Nothing to see here
+its just a README page 
