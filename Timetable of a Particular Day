@@ -1,0 +1,29 @@
+//timetable
+#include<stdio.h>
+int main()
+{
+    int ch;
+    printf("Enter your period");
+    scanf("%d",&ch);
+    switch(ch)
+    {
+        case 1:
+        printf("First period : Maths\n");
+        printf("Time : 7:15 to 8:15");
+        break;
+        
+        case 2:
+        printf("Second period : Phy \n");
+        printf("Time : 8:15 to 9:15");
+        break;
+        
+        case 3:
+        printf("Third period : CO\n");
+        printf("Time : 10:00 to 11:00");
+        break;
+        
+        default:
+        printf("Wrong Period");
+    }
+    return 0;
+}
